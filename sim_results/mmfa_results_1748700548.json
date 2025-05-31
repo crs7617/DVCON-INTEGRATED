@@ -1,0 +1,24 @@
+{
+  "simulation_config": {
+    "num_frames": 50,
+    "timestamp": 1748700548.5487835
+  },
+  "performance_summary": {
+    "total_frames": 50,
+    "avg_fps": 767.5717279434284,
+    "avg_frame_time_ms": 1.30280983990815,
+    "avg_inference_time_ms": 20.045455660074367,
+    "avg_power_mw": 429.18240581569256,
+    "peak_power_mw": 430.267562938727,
+    "threat_detection_rate": 0.0,
+    "efficiency_fps_per_watt": 1788.451058436569
+  },
+  "system_config": {
+    "models_loaded": [
+      "vision",
+      "audio",
+      "motion"
+    ],
+    "hardware_simulation": false
+  }
+}

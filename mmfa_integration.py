@@ -466,8 +466,8 @@ class SimplifiedMMFASystem:
         with open(results_file, 'w') as f:
             json.dump(results, f, indent=2, default=str)
         
-        print(f"\n{Colors.OKGREEN}✅ Simulation completed{Colors.ENDC}")
-        print(f"📊 Results saved: {results_file}")
+        print(f"\n{Colors.OKGREEN} Simulation completed{Colors.ENDC}")
+        print(f" Results saved: {results_file}")
         
         return results
     
@@ -501,7 +501,7 @@ def main():
         mmfa_system = SimplifiedMMFASystem()
         
         if not mmfa_system.initialize():
-            print(f"{Colors.FAIL}❌ System initialization failed{Colors.ENDC}")
+            print(f"{Colors.FAIL} System initialization failed{Colors.ENDC}")
             return 1
         
         # Run simulation
@@ -510,14 +510,14 @@ def main():
         # Print results
         mmfa_system.print_results_summary(results)
         
-        print(f"\n{Colors.OKGREEN}🎯 MMFA simulation completed successfully!{Colors.ENDC}")
+        print(f"\n{Colors.OKGREEN} MMFA simulation completed successfully!{Colors.ENDC}")
         return 0
         
     except KeyboardInterrupt:
         print(f"\n{Colors.WARNING}⚠️ Simulation interrupted{Colors.ENDC}")
         return 0
     except Exception as e:
-        print(f"{Colors.FAIL}❌ Error: {e}{Colors.ENDC}")
+        print(f"{Colors.FAIL} Error: {e}{Colors.ENDC}")
         return 1
 
 if __name__ == "__main__":
