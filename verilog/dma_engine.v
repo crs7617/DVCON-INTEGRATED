@@ -135,7 +135,7 @@ module DMA (
 endmodule
 
 //==============================================================================
-// Updated testbench for compatible DMA engine
+// Updated testbench for compatible DMA engine - FIXED SYNTAX ERRORS
 //==============================================================================
 
 module dma_engine_compatible_tb();
